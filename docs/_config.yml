@@ -1,0 +1,7 @@
+# Permalinks
+
+collections:
+  stories:
+    output: true
+  explorables:
+    output: true

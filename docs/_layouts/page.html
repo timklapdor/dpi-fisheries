@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+
+    {% capture styles %}
+    {% include page.scss %}
+    {% endcapture %}
+
+    <style>
+      {{ styles | scssify }}
+    </style>
+
+  </head>
+  <body>
+
+    <header>
+      <div class="brand">
+        <img src="{{site.baseurl}}/assets/global/dpi-rev.svg" alt="DPI Logo">
+      </div>
+      <div class="division">
+        <h1>Fresh Water Recreational Fishing Research</h1>
+      </div>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+  </body>
+</html>

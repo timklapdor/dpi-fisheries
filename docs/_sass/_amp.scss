@@ -1,6 +1,10 @@
+body {
+  font-size: 16px;
+}
+
 amp-story {
   font-family: 'Roboto', serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #ffffff;
 }
 
@@ -16,12 +20,14 @@ amp-story-grid-layer h1 {
   font-weight: 700;
   font-size: 2.875rem;
   line-height: .9;
-  border-bottom: 4px solid #CA4B20;
+  border-bottom: 4px solid $orange-d;
   padding-bottom: .2em;
+  margin-bottom: .5em;
+  text-transform: capitalize;
 }
 p, li {
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.2em;
   color: #fff;
 }
@@ -78,11 +84,11 @@ amp-story-grid-layer.noedge {
 }
 
 amp-story-grid-layer blockquote {
-  border-left: 4px solid #087CC1;
+  border-left: 4px solid $accent;
 }
 
 amp-story-grid-layer blockquote.yellow {
-  border-left: 4px solid #FAA300;
+  border-left: 4px solid $yellow;
 }
 
 amp-story-grid-layer blockquote p {
@@ -94,7 +100,7 @@ amp-story-grid-layer.center-text {
 }
 
 .caption-info {
-  border-bottom: 4px solid #087CC1;
+  border-bottom: 4px solid $accent;
   padding: .7em 0;
   list-style: none;
   font-size: 1.1rem;
@@ -113,7 +119,7 @@ amp-story-grid-layer.center-text {
 .quote-speech:before {
   content: open-quote;
   font-size: 4rem;
-  color: #FAA300;
+  color: $yellow;
   display: inline;
 }
 
@@ -123,20 +129,15 @@ amp-story-grid-layer.center-text {
   display: inline;
   position: relative;
   left: 80vw;
-  color: #FAA300;
+  color: $yellow;
 }
 
-.bg-yellow {
-  background: #FAA300;
-}
+// Colours
 
-.bg-blue {
-  background: #087CC1;
-}
-
-.bg-orange {
-  background: #CA4B20;
-}
+.bg-yellow { background: $yellow;}
+.bg-blue { background: $accent;}
+.bg-orange { background: $orange-d;}
+.text-yellow { color: $blue;}
 
 .offset-top {
   margin-top: 20vh;
@@ -144,6 +145,14 @@ amp-story-grid-layer.center-text {
 
 .offset-bottom-10 {
   margin-bottom: 10vh;
+}
+
+.offset-bottom-15 {
+  margin-bottom: 15vh;
+}
+
+.offset-bottom-20 {
+  margin-bottom: 20vh;
 }
 
 .no-padding {
@@ -156,7 +165,7 @@ amp-story-grid-layer.center-text {
 blockquote.quote-speech + cite {
   font-size: .9rem;
   padding: 1em 0;
-  border-bottom: 2px solid #FAA300;
+  border-bottom: 2px solid $yellow;
 }
 
 blockquote.quote-speech p {
@@ -165,11 +174,11 @@ blockquote.quote-speech p {
   margin: -3rem 0 -1em 0;
 }
 
-amp-story-grid-layer blockquote.quote-line {
+blockquote.quote-line {
   padding: .5rem 0;
   border: 0;
-  border-top: 4px solid #FAA300 !important;
-  border-bottom: 4px solid #FAA300 !important;
+  border-top: 4px solid $yellow !important;
+  border-bottom: 4px solid $yellow !important;
 }
 
 .wrapper {
@@ -189,18 +198,30 @@ amp-story-grid-layer blockquote.quote-line {
 }
 
 .block .block-content {
-  background-color: rgba(6,63,92,.8);
   padding: 5vw;
+
+  ul {
+    margin: 0;
+    padding: 0 1em;
+    list-style: circle;
+      }
+  li {padding-top: .2em;}
 }
 
+// Lists
 .special-numbers {
   padding-top: 1rem;
 }
 
-.special-numbers li {
-
+.list-disc {
+  list-style: disc;
 }
 
+.list-square {
+  list-style: square;
+}
+
+// Vertical alignment
 .vertical-bottom {
   align-content:end !important;
 }
@@ -211,4 +232,31 @@ amp-story-grid-layer blockquote.quote-line {
 
 .vertical-middle {
   align-content: center !important;
+}
+
+.published {
+  text-transform: uppercase;
+  font-size: .6em;
+  text-align: right;
+}
+
+.cta {
+  display: flex !important;
+  justify-content: center;
+  align-content: center;
+
+  .button {
+    align-self: center;
+    background-color: $accent;
+    border-radius: 1em;
+    padding: 1em;
+    color: $rev;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      background: $orange-d;
+      transition: all .5s;
+    }
+  }
 }

@@ -1,0 +1,58 @@
+:root {
+  --color-blue: #264D76;
+  --color-blue-dark: #1B2240;
+  --color-blue-light: #C2D9EF;
+  --color-green: #87AD5F;
+  --color-green-dark: #4D6534;
+  --color-green-light: #B3CB9A;
+  --color-salmon: #E77B64;
+  --color-salmon-dark: #CA4B20;
+  --color-salmon-light: #F5C6BD;
+  --color-yellow: #FAA300;
+  --color-yellow-dark: #CC8E33;
+  --color-yellow-light: #FFC861;
+  --color-action: #087CC1;
+}
+
+$blue: #264D76;
+$blue-d: #1B2240;
+$blue-l: #C2D9EF;
+$green: #87AD5F;
+$green-d: #4D6534;
+$green-l: #B3CB9A;
+$orange: #E77B64;
+$orange-d: #CA4B20;
+$orange-l: #F5C6BD;
+$yellow: #FAA300;
+$yellow-d: #CC8E33;
+$yellow-l: #FFC861;
+$accent: #087CC1;
+$rev: #fff;
+$blk: #000;
+
+$palette: (
+dpi-blue: $blue,
+dpi-blue-d: $blue-d,
+dpi-blue-l: $blue-l,
+dpi-green: $green,
+dpi-green-d: $green-d,
+dpi-green-l: $green-l,
+dpi-orange: $orange,
+dpi-orange-d: $orange-d,
+dpi-orange-l: $orange-l,
+dpi-yellow: $yellow,
+dpi-yellow-d: $yellow-d,
+dpi-yellow-l: $yellow-l,
+dpi-accent: $accent,
+dpi-blk: #000000,
+dpi-rev: #ffffff,
+);
+
+@each $color, $value in $palette {
+  .bg-#{$color} { background: $value; }
+  .text-#{$color} { color: $value; }
+  .bg-80-#{$color} { background-color: transparentize($value, .8); color: #fff; }
+  .bg-50-#{$color} { background-color: transparentize($value, .5); color: #fff; }
+  .bg-20-#{$color} { background-color: transparentize($value, .2); color: #fff; }
+  .border-#{$color} { border-color: $value !important;}
+}

@@ -1,16 +1,17 @@
 ---
 
 layout: trout-monitoring-jekyll
-title: Annual Stream Monitoring   # The title of the story
-subtitle: Report Cards for NSW Rivers
-publisher: # The name of the story's publisher
-publisher_logo_src: #logo in 1x1 aspect ratio - .png
+title: 2018–19 Report Cards   # The title of the story
+subtitle: Trout in NSW Rivers
+publisher: NSW Department of Primary Industries # The name of the story's publisher
+publisher_logo_src: 00-26fifty.png #logo in 1x1 aspect ratio - .png
 poster_portrait_src: # Story Poster in 3x4 aspect ratio min 696px x 928px
 poster_square_src: # Story Poster in 1x1 aspect ratio min 928px x 928px
 poster_landscape_src: # Story Poster in 4x3 aspect ratio min 928px x 696px
+brand_logo: 00-dpi-rev.svg
 background_colour:
 background_audio:
-permalink: reports.html
+permalink: :title/index.html
 cover:
   title: Fisheries Test
   placement:
@@ -36,10 +37,11 @@ pages:
 ---
 
  <amp-story standalone
-  title="Stream Reports"
-  publisher="26fifty"
-  publisher-logo-src="{{ site.baseurl }}/assets/global/26fifty.png"
+  title="{{ page.title }}"
+  publisher="{{ page.publisher }}"
+  publisher-logo-src="{{ page.publisher_logo_src }}"
   poster-portrait-src="{{ site.baseurl }}/assets/test/cover.jpg">
+  <!-- #TODO: set cover images -->
 
 
 <!-- PAGE HERE -->
@@ -58,7 +60,7 @@ pages:
    </amp-story-grid-layer>
 
    <amp-story-grid-layer template="vertical" class="logo-top-left">
-    <amp-img src="{{ site.baseurl }}/assets/global/dpi-rev.svg"
+    <amp-img src="{{ page.brand_logo }}"
       width="200" height="60">
     </amp-img>
    </amp-story-grid-layer>

@@ -1,0 +1,4 @@
+animate-in="{% if item.text_animation != null %}{{ item.text_animation }}{% else %}fade-in{% endif %}"
+animate-in-delay="{% if item.text_animation_delay != null %}{{ item.text_animation_delay }}s{% endif %}"
+animate-in-duration="{% if item.text_animation_duration != null %}{{ item.text_animation_duration }}s{% endif %}"
+class="{{ item.text_div_class }}"

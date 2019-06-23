@@ -1,0 +1,143 @@
+---
+
+layout: amp-container
+
+---
+
+ <amp-story standalone
+  title="{{ page.title }}"
+  publisher="{{ page.publisher }}"
+  publisher-logo-src="{{ page.publisher_logo_src }}"
+  poster-portrait-src="{{ site.baseurl }}/assets/test/cover.jpg">
+  <!-- #TODO: set cover images -->
+
+
+<!-- COVER -->
+  <amp-story-page id="cover">
+   <amp-story-grid-layer template="fill">
+    <amp-img src="{{ page.cover.background_image }}"
+      width="720" height="1280"
+      layout="responsive"
+      style="filter: {{ page.cover.filter }}">
+    </amp-img>
+   </amp-story-grid-layer>
+
+   {% if page.cover.gradient_overlay %}
+   <amp-story-grid-layer template="fill">
+    <div style="background: linear-gradient({{ page.cover.gradient_overlay}});"></div>
+   </amp-story-grid-layer>
+   {% endif %}
+
+   <amp-story-grid-layer template="vertical" class="logo-top-{{ page.cover.logo_placement }}">
+    <amp-img src="{{ page.brand_logo }}"
+      width="200" height="60"
+      animate-in="fly-in-right"
+      animate-in-delay="1s"
+      animate-in-duration="0.8s">
+    </amp-img>
+   </amp-story-grid-layer>
+
+   <amp-story-grid-layer template="vertical" class="logo-bottom">
+    <amp-img src="{{ page.cover.secondary_logo }}"
+      width="150" height="100">
+    </amp-img>
+    <p class="published">Published {{ page.publish_date }}</p>
+   </amp-story-grid-layer>
+
+   <amp-story-grid-layer template="vertical" class="center-text vertical-top offset-top">
+    <div
+    animate-in="fly-in-left"
+    animate-in-delay="0.5s"
+    animate-in-duration="0.8s">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+   </div>
+   </amp-story-grid-layer>
+  </amp-story-page>
+
+<!-- PAGES HERE -->
+{% for item in page.slides %}
+<amp-story-page id="{{ forloop.index0 }}-{{ item.id }}">
+
+   <amp-story-grid-layer template="fill">
+    <amp-img src="{{ item.background_url }}"
+      width="720" height="1280"
+      layout="responsive"
+      style="filter:
+        {% if item.background_brightness != null  %}brightness({{ item.background_brightness }}){% endif %}
+        {% if item.background_blur != null %}blur({{ item.background_blur }}px){% endif %};">
+    </amp-img>
+   </amp-story-grid-layer>
+
+   <amp-story-grid-layer template="fill">
+    <div style="background: linear-gradient({{ item.background_gradient }});">
+    </div>
+   </amp-story-grid-layer>
+
+   <amp-story-grid-layer template="{{ item.text_template }}" class="{{ item.text_layer_class }}">
+    {% if item.text_type == "list" %}
+        <div
+        {% include animation.css %}>
+        <p id="lead1">{{ item.text_list_pre}}</p>
+        {% if item.text_list_ordered == true %}
+          <ol class="special-numbers">
+            {% for list in item.text_list_items %}
+             <li id="{{ forloop.index }}-list"
+             animate-in="fade-in"
+             animate-in-delay=".2s"
+             animate-in-duration=".5s"
+             {% if forloop.first == true %} {% else %} animate-in-after="{{ forloop.index | minus:1}}-list"{% endif %}>{{ list }}</li>
+            {% endfor %}
+          </ol>
+        {% else %}
+          <ul class="{{ item.text_list_bullet }}">
+            {% for list in item.text_list_items %}
+               <li id="{{ forloop.index }}-list"
+               animate-in="fade-in"
+               animate-in-delay=".2s"
+               animate-in-duration=".5s"
+               {% if forloop.first == true %} {% else %} animate-in-after="{{ forloop.index | minus:1}}-list"{% endif %}>{{ list }}</li>
+               {% endfor %}
+          </ul>
+        {% endif%}
+      </div>
+    {% endif %}
+
+   {% if item.text_type == "third" %}
+    <div
+    grid-area="{{ item.text_gridarea}}-third"
+    {% include animation.css %}>
+     {{ item.text_content | markdownify }}
+   </div>
+   {% endif %}
+
+   {% if item.text_type == "question" %}
+    <div
+    {% include animation.css %}>
+      {{ item.text_content | markdownify }}
+    </div>
+    {% endif %}
+
+    {% if item.text_type == "block" %}
+     <div
+     {% include animation.css %}>
+      {{ item.text_content | markdownify }}
+    </div>
+    {% endif %}
+
+    {% if item.text_type == "blockquote" %}
+     <blockquote
+     {% include animation.css %}>
+      {{ item.text_content | markdownify }}
+    </blockquote>
+    {% endif %}
+
+   </amp-story-grid-layer>
+    {% if item.cta_link != null %}
+    <amp-story-cta-layer class="cta">
+      <a href="{{ item.cta_link }}" class="button">{{ item.cta_text }}</a>
+    </amp-story-cta-layer>
+    {% endif %}
+
+  </amp-story-page>
+  {% endfor %}

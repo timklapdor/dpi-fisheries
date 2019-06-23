@@ -1,0 +1,264 @@
+---
+
+layout: amp-story
+title: Testing   # The title of the story
+subtitle: Getting a Jekyll Template Up & Running
+publish_date:
+publisher: NSW Department of Primary Industries # The name of the story's publisher
+publisher_logo_src: 00-26fifty.png #logo in 1x1 aspect ratio - .png
+poster_portrait_src: # Story Poster in 3x4 aspect ratio min 696px x 928px
+poster_square_src: # Story Poster in 1x1 aspect ratio min 928px x 928px
+poster_landscape_src: # Story Poster in 4x3 aspect ratio min 928px x 696px
+brand_logo: 00-dpi-rev.svg
+background_colour:
+background_audio:
+permalink: :title/index.html
+cover:
+  title: Fisheries Test
+  logo_placement: right
+  secondary_logo: trout-rev.svg
+  subtitle: Tetsing AMP Stories
+  background_image: field.jpg
+  filter: "brightness(.8)"
+  gradient_overlay: "to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
+slides:
+  - id: list # need a unique id for each slide, don't use numbering
+    auto_advance:
+    background_template: fill # layout template
+    background_url: creek.jpg #file url
+    background_brightness: .5 #brightness control 0-1
+    background_blur: 4 #blur setting - px settings
+    background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
+    text_template: "vertical"
+    text_layer_class: "center-text"
+    text_type: "list"
+    text_animate: "fade-in"
+    text_animate_delay: .5
+    text_animate_duration: 1
+    text_list_ordered: false #ordered or unordered
+    text_list_bullet: # for unordered lists
+    text_list_pre: "NSW trout fisheries are being challenged by:"
+    text_list_items:
+    - "environmental impacts,"
+    - "climate change,"
+    - "pest species,"
+    - "access restrictions,"
+    - "habitat degradation and more."
+    text_content: |-
+  - id: blockquote
+    auto_advance:
+    background_template: fill # layout template
+    background_url: creek.jpg #file url
+    background_brightness: .5 #brightness control 0-1
+    background_blur: 4 #blur setting - px settings
+    background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
+    text_template: vertical
+    text_layer_class: "center-text"
+    text_type: blockquote
+    text_animate: "fade-in"
+    text_animate_delay: .5
+    text_animate_duration: 1
+    text_div_class: ""
+    text_list_pre: "NSW trout fisheries are being challenged by:"
+    text_list_items:
+    text_content: |-
+      A key component of the trout strategy is **improved monitoring of trout fisheries**.
+
+      This monitoring will answer questions like...
+  - id: block
+    auto_advance:
+    background_template: fill # layout template
+    background_url: creek.jpg #file url
+    background_brightness: .5 #brightness control 0-1
+    background_blur: 4 #blur setting - px settings
+    background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
+    text_template: vertical
+    text_layer_class: "no-padding vertical-middle"
+    text_type: block
+    text_animate: "fade-in"
+    text_animate_delay: .5
+    text_animate_duration: 1
+    text_div_class: "question bg-yellow offset-top"
+    text_list_items:
+    text_content: |-
+      A key component of the trout strategy is **improved monitoring of trout fisheries**.
+
+      This monitoring will answer questions like...
+  - id: test-next
+    auto_advance:
+    background_template: fill # layout template
+    background_url: creek.jpg #file url
+    background_brightness: .5 #brightness control 0-1
+    background_blur: 4 #blur setting - px settings
+    background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
+    text_template: thirds
+    text_animate: "fly-in-bottom"
+    text_animate_delay: .5
+    text_animate_duration: 1
+    text_layer_class: bottom block
+    text_type: third
+    text_div_class: "block-content bg-20-dpi-blue-d offset-top"
+    text_gridarea: lower
+    text_content: |-
+      As a result NSW DPI Fisheries has developed a **state-wide trout strategy** to determine how to best address these challenges facing the fishery.
+  - id: test-third
+    auto_advance:
+    background_template: fill # layout template
+    background_url: creek.jpg #file url
+    background_brightness: .5 #brightness control 0-1
+    background_blur: 4 #blur setting - px settings
+    background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
+    text_template: "vertical"
+    text_layer_class: "no-padding vertical-top"
+    text_type: question
+    text_div_class: "question bg-orange"
+    text_gridarea:
+    text_content: |-
+      45 stream monitoring sites were identified across the state.
+
+---
+
+ <amp-story standalone
+  title="{{ page.title }}"
+  publisher="{{ page.publisher }}"
+  publisher-logo-src="{{ page.publisher_logo_src }}"
+  poster-portrait-src="{{ site.baseurl }}/assets/test/cover.jpg">
+  <!-- #TODO: set cover images -->
+
+
+<!-- COVER -->
+  <amp-story-page id="cover">
+   <amp-story-grid-layer template="fill">
+    <amp-img src="{{ page.cover.background_image }}"
+      width="720" height="1280"
+      layout="responsive"
+      style="filter: {{ page.cover.filter }}">
+    </amp-img>
+   </amp-story-grid-layer>
+
+   {% if page.cover.gradient_overlay %}
+   <amp-story-grid-layer template="fill">
+    <div style="background: linear-gradient({{ page.cover.gradient_overlay}});"></div>
+   </amp-story-grid-layer>
+   {% endif %}
+
+   <amp-story-grid-layer template="vertical" class="logo-top-{{ page.cover.logo_placement }}">
+    <amp-img src="{{ page.brand_logo }}"
+      width="200" height="60"
+      animate-in="fly-in-right"
+      animate-in-delay="1s"
+      animate-in-duration="0.8s">
+    </amp-img>
+   </amp-story-grid-layer>
+
+   <amp-story-grid-layer template="vertical" class="logo-bottom">
+    <amp-img src="{{ page.cover.secondary_logo }}"
+      width="150" height="100">
+    </amp-img>
+   </amp-story-grid-layer>
+
+   <amp-story-grid-layer template="vertical" class="center-text vertical-top offset-top">
+    <div
+    animate-in="fly-in-left"
+    animate-in-delay="0.5s"
+    animate-in-duration="0.8s">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+   </div>
+   </amp-story-grid-layer>
+  </amp-story-page>
+
+<!-- PAGES HERE -->
+{% for item in page.slides %}
+<amp-story-page id="{{ forloop.index0 }}-{{ item.id }}">
+
+   <amp-story-grid-layer template="{{ item.background_template }}">
+    <amp-img src="{{ item.background_url }}"
+      width="720" height="1280"
+      layout="responsive"
+      style="filter:
+        {% if item.background_brightness != null  %}brightness({{ item.background_brightness }}){% endif %}
+        {% if item.background_blur != null %}blur({{ item.background_blur }}px){% endif %};">
+    </amp-img>
+   </amp-story-grid-layer>
+
+   <amp-story-grid-layer template="fill">
+    <div style="background: linear-gradient({{ item.background_gradient }});">
+    </div>
+   </amp-story-grid-layer>
+
+   <amp-story-grid-layer template="{{ item.text_template }}" class="{{ item.text_layer_class }}">
+    {% if item.text_type == "list" %}
+        <div
+        animate-in="{{item.text_animate}}"
+        animate-in-delay="{{item.text_animate_delay}}s"
+        animate-in-duration="{{item.text_animate_duration}}s">
+        <p id="lead1">{{ item.text_list_pre}}</p>
+        {% if item.text_list_ordered == true %}
+          <ol class="special-numbers">
+            {% for list in item.text_list_items %}
+             <li id="{{ forloop.index }}-list"
+             animate-in="fade-in"
+             animate-in-delay=".2s"
+             animate-in-duration=".5s"
+             {% if forloop.first == true %} {% else %} animate-in-after="{{ forloop.index | minus:1}}-list"{% endif %}>{{ list }}</li>
+            {% endfor %}
+          </ol>
+        {% else %}
+          <ul class="{{ item.text_list_bullet }}">
+            {% for list in item.text_list_items %}
+               <li id="{{ forloop.index }}-list"
+               animate-in="fade-in"
+               animate-in-delay=".2s"
+               animate-in-duration=".5s"
+               {% if forloop.first == true %} {% else %} animate-in-after="{{ forloop.index | minus:1}}-list"{% endif %}>{{ list }}</li>
+               {% endfor %}
+          </ul>
+        {% endif%}
+      </div>
+    {% endif %}
+
+   {% if item.text_type == "third" %}
+    <div
+    grid-area="{{ item.text_gridarea}}-third"
+    animate-in="{{item.text_animate}}s"
+    animate-in-delay="{{item.text_animate_delay}}s"
+    animate-in-duration="{{item.text_animate_duration}}s"
+    class="{{ item.text_div_class }}">
+     {{ item.text_content | markdownify }}
+   </div>
+   {% endif %}
+
+   {% if item.text_type == "question" %}
+    <div
+    animate-in="{{item.text_animate}}s"
+    animate-in-delay="{{item.text_animate_delay}}s"
+    animate-in-duration="{{item.text_animate_duration}}s"
+    class="{{ item.text_div_class }}">
+      {{ item.text_content | markdownify }}
+    </div>
+    {% endif %}
+
+    {% if item.text_type == "block" %}
+     <div
+     animate-in="{{item.text_animate}}s"
+     animate-in-delay="{{item.text_animate_delay}}s"
+     animate-in-duration="{{item.text_animate_duration}}s"
+     class="{{ item.text_div_class }}">
+      {{ item.text_content | markdownify }}
+    </div>
+    {% endif %}
+
+    {% if item.text_type == "blockquote" %}
+     <blockquote
+     animate-in="{{item.text_animate}}s"
+     animate-in-delay="{{item.text_animate_delay}}s"
+     animate-in-duration="{{item.text_animate_duration}}s"
+     class="{{ item.text_div_class }}">
+      {{ item.text_content | markdownify }}
+    </blockquote>
+    {% endif %}
+
+   </amp-story-grid-layer>
+  </amp-story-page>
+  {% endfor %}

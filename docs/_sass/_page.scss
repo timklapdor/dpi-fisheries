@@ -1,0 +1,124 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 2vw;
+  height: 15vh;
+  background: #264D76;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2em solid #C2D9EF;
+
+  .brand {
+    flex: 1 2 auto;
+  }
+
+  .division {
+    flex: 1 2 auto;
+    color: #fff;
+    text-align: right;
+  }
+}
+  @media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: 20vh;
+  }
+  }
+
+  main {
+    flex: 1 1 auto;
+    padding: 2vw;
+    min-height: 100%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+  h2, h2 a {
+    flex: 1 2 100%;
+    color: #264D76;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    border-bottom: 3px solid #E77B64;
+    padding: .3em 0;
+  }
+
+  h3, h3 a {
+    color: #264D76;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+
+  h3 a:hover {
+    color: #E77B64;
+  }
+
+  p {
+    max-width: 45em;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+
+  div.box {
+    flex: 1 1 auto;
+    height: 20vh;
+    border: 1px solid pink;
+    display: inline-block;
+  }
+
+  button {
+    flex: 0 1 8em;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: .2em;
+    padding: .3em 1em;
+    border: 0;
+}
+
+  .fish-group {
+    width: 100%;
+
+    button {
+    background: #E77B64;
+
+      &:hover {
+        color: #fff;
+        background: #333;
+      }
+    }
+  }
+
+  .region-group {
+    width: 100%;
+
+    button {
+    background: #87AD5F;
+
+      &:hover {
+        color: #fff;
+        background: #333;
+      }
+    }
+  }
+footer {
+  height: 5vh;
+  background: #333;
+}

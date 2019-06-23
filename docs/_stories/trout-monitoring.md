@@ -7,9 +7,6 @@ slug: trout-monitoring
 publish_date: June 2019
 publisher: NSW Department of Primary Industries # The name of the story's publisher
 publisher_logo_src: 00-26fifty.png #logo in 1x1 aspect ratio - .png
-poster_portrait_src: # Story Poster in 3x4 aspect ratio min 696px x 928px
-poster_square_src: # Story Poster in 1x1 aspect ratio min 928px x 928px
-poster_landscape_src: # Story Poster in 4x3 aspect ratio min 928px x 696px
 brand_logo: 00-dpi-rev.svg
 background_colour:
 background_audio:
@@ -19,8 +16,9 @@ cover:
   logo_placement: right
   secondary_logo:
   background_image: trout.jpg
+  background_video: trout-swimming.mp4
   filter: "brightness(.8)"
-  gradient_overlay: "to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
+  gradient_overlay: "to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,.4) 50%,rgba(0,0,0,0) 70%, rgba(0,0,0,.6) 95%"
 slides:
   - id:  challenge # need a unique id for each slide, don't use numbering
     auto_advance:

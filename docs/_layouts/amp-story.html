@@ -15,11 +15,20 @@ layout: amp-container
 <!-- COVER -->
   <amp-story-page id="cover">
    <amp-story-grid-layer template="fill">
-    <amp-img src="{{ page.cover.background_image }}"
-      width="720" height="1280"
-      layout="responsive"
-      style="filter: {{ page.cover.filter }}">
-    </amp-img>
+     {% if page.cover.background_video != null %}
+     <amp-video autoplay loop
+      width="720" height="1280" layout="responsive"
+      poster="">
+      <source src="{{ page.cover.background_video }}" type="video/mp4" />
+    </amp-video>
+
+     {% else %}
+      <amp-img src="{{ page.cover.background_image }}"
+        width="720" height="1280"
+        layout="responsive"
+        style="filter: {{ page.cover.filter }}">
+      </amp-img>
+      {% endif %}
    </amp-story-grid-layer>
 
    {% if page.cover.gradient_overlay %}

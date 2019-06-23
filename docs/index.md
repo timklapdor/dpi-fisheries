@@ -15,7 +15,7 @@ The list of resources below has been developed by the team form [26fifty](https:
       <img src="assets/fisheries/bookend-forestry.png" alt="">
     </div>
     <div class="text">
-        <h3><a href="{{ story.url }}">{{ story.title }}</a></h3>
+        <h3><a href="{{ site.baseurl }}{{ story.url }}">{{ story.title }}</a></h3>
     </div>
   </li>
   {% endfor %}
@@ -28,10 +28,10 @@ The list of resources below has been developed by the team form [26fifty](https:
 {% for item in site.explorables %}
 <li class="card">
   <div class="img">
-    <img src="assets/fisheries/bookend-forestry.png" alt="">
+    <img src="{{ site.baseurl }}assets/fisheries/bookend-forestry.png" alt="">
   </div>
   <div class="text">
-      <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+      <h3><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h3>
   </div>
 </li>
 

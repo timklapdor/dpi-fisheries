@@ -1,5 +1,7 @@
 # Permalinks
 
+baseurl: /dpi-fisheries
+
 collections:
   stories:
     output: true

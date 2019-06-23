@@ -16,7 +16,7 @@ permalink: :title/index.html
 cover:
   title: Fisheries Test
   logo_placement: right
-  secondary_logo: 
+  secondary_logo:
   background_image: trout.jpg
   filter: "brightness(.8)"
   gradient_overlay: "to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
@@ -52,14 +52,13 @@ slides:
     text_layer_class: "center-text " #styling classes
     text_type: "blockquote" #choose from list, block, blockquote, question
     text_div_class: border-dpi-yelllow
-    text_animation: fly-in-bottom
+    text_animation: fly-in-right
     text_animation_delay: .5
     text_animation_duration: 1
     text_content: |- #type as Markdown---
       As a result NSW DPI Fisheries have developed a **state-wide trout strategy** to determine how to best address these challenges facing the fishery.
   - id:  action # need a unique id for each slide, don't use numbering
     auto_advance:
-
     background_url: creek.jpg #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: #blur setting - px settings

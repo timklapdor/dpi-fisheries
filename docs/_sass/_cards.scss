@@ -9,7 +9,7 @@
 @supports (display: grid) {
     .cards > ul {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
         grid-column-gap: 1.5rem;
         grid-row-gap:1.5rem;
         width: 100%;
@@ -22,7 +22,7 @@
 }
 
 .card {
-    border: 1px solid #f2f2f2;
+
     border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
@@ -73,8 +73,13 @@
 
 .card:focus-within, .card:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    background: #cccccc;
-    transition: all .2s ease-in
+    background: $orange-d;
+    color: $rev;
+    transition: all .2s ease-in;
+
+    & a {
+      color: $rev;
+    }
 }
 
 .card:focus-within a:focus {

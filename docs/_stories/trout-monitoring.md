@@ -1,8 +1,9 @@
 ---
 
 layout: amp-story
-title: NSW Trout monitoring //   # The title of the story
+title: NSW Trout monitoring  # The title of the story
 subtitle: Annual stream monitoring overview
+slug: trout-monitoring
 publish_date: June 2019
 publisher: NSW Department of Primary Industries # The name of the story's publisher
 publisher_logo_src: 00-26fifty.png #logo in 1x1 aspect ratio - .png
@@ -12,7 +13,7 @@ poster_landscape_src: # Story Poster in 4x3 aspect ratio min 928px x 696px
 brand_logo: 00-dpi-rev.svg
 background_colour:
 background_audio:
-permalink: :title/index.html
+permalink: :slug/index.html
 cover:
   title: Fisheries Test
   logo_placement: right
@@ -102,10 +103,7 @@ slides:
     text_content: |- #type as Markdown
       ## Is there a decline in trout populations?
   - id: Q3 # need a unique id for each slide, don't use numbering
-    auto_advance:
     background_url: trayfull.jpg #file url
-    background_brightness:  #brightness control 0-1
-    background_blur:  #blur setting - px settings
     text_template: "vertical" #location of text
     text_layer_class: "no-padding vertical-middle" #styling classes
     text_type: "question" #choose from list, block, blockquote, question
@@ -142,19 +140,10 @@ slides:
     text_animation: "fly-in-top"
     text_animation_delay: .2
     text_animation_duration: 1
-    text_list_ordered: false #true for order lists, false for unordered
-    text_list_bullet: # for unordered lists - disc, square,
-    text_list_pre: |- #type as Markdown
-
-    text_list_items:
-    - ""
     text_content: |- #type as Markdown
       45 stream monitoring sites were identified across the state.
   - id: split # need a unique id for each slide, don't use numbering
-    auto_advance:
     background_url: regions-map.png #file url
-    background_brightness:  #brightness control 0-1
-    background_blur:  #blur setting - px settings
     text_template: "vertical" #location of text
     text_layer_class: "no-padding vertical-middle" #styling classes
     text_type: "block" #choose from list, block, blockquote, question
@@ -162,19 +151,10 @@ slides:
     text_animation: "fly-in-right"
     text_animation_delay: .2
     text_animation_duration: 1
-    text_list_ordered: false #true for order lists, false for unordered
-    text_list_bullet: # for unordered lists - disc, square,
-    text_list_pre: |- #type as Markdown
-
-    text_list_items:
-    - ""
     text_content: |- #type as Markdown
       This includes 15 rivers split evenly between the **North**, **Central** and **Southern** NSW trout fisheries. These sites will be sampled annually to provide data on the long term trends in the fishery.
   - id:  backpack # need a unique id for each slide, don't use numbering
-    auto_advance:
     background_url: electro-fishing.jpg #file url
-    background_brightness:  #brightness control 0-1
-    background_blur:  #blur setting - px settings
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
     text_template: "third" #location of text
     text_layer_class: "bottom block " #styling classes
@@ -183,29 +163,18 @@ slides:
     text_animation: fly-in-bottom
     text_animation_delay: .2
     text_animation_duration: 1
-    text_list_ordered: false #true for order lists, false for unordered
-    text_list_bullet: # for unordered lists - disc, square,
-    text_list_pre: |- #type as Markdown
-    text_list_items:
     text_content: |- #type as Markdown---
       Backpack electrofishing is widely used to monitor stream trout populations throughout the world. Monitoring of the NSW trout populations has adopted international best practice and scientifically rigorous techniques which will allow comparison across years and to previous survey data from NSW streams.
   - id: counting # need a unique id for each slide, don't use numbering
-    auto_advance:
     background_url: vaki.jpg #file url
-    background_brightness:  #brightness control 0-1
-    background_blur:  #blur setting - px settings
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
     text_template: "third" #location of text
     text_layer_class: "bottom block " #styling classes
     text_type: "block" #choose from list, block, blockquote, question
     text_div_class: "block-content"
-    text_animation: fly-in-right
+    text_animation: fly-in-left
     text_animation_delay: .2
     text_animation_duration: 1
-    text_list_ordered: false #true for order lists, false for unordered
-    text_list_bullet: # for unordered lists - disc, square,
-    text_list_pre: |- #type as Markdown
-    text_list_items:
     text_content: |- #type as Markdown---
       Stream monitoring forms just one component in how the status of the NSW trout fishery will be being monitored. Other monitoring techniques already being developed or deployed include:
 
@@ -213,29 +182,19 @@ slides:
       - Angler surveys
       - Citizen science
   - id: programs # need a unique id for each slide, don't use numbering
-    auto_advance:
     background_url: stream-grass.jpg #file url
-    background_brightness:  #brightness control 0-1
-    background_blur:  #blur setting - px settings
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
     text_template: "third" #location of text
     text_layer_class: "bottom block " #styling classes
     text_type: "block" #choose from list, block, blockquote, question
     text_div_class: "block-content"
-    text_animation: fly-in-right
+    text_animation: fly-in-bottom
     text_animation_delay: .2
     text_animation_duration: 1
-    text_list_ordered: false #true for order lists, false for unordered
-    text_list_bullet: # for unordered lists - disc, square,
-    text_list_pre: |- #type as Markdown
-    text_list_items:
     text_content: |- #type as Markdown---
       The NSW trout monitoring programs will allow managers to track how the fishery is going and where possible make improvements. However, trout populations vary widely and fluctuations in populations are normal in fish populations and trout are particularly good at responding to improvements in their environment.
   - id: cta # need a unique id for each slide, don't use numbering
-    auto_advance:
     background_url: trout-in-hand.jpg #file url
-    background_brightness:  #brightness control 0-1
-    background_blur:  #blur setting - px settings
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
     text_template: "vertical" #location of text
     text_layer_class: "no-padding vertical-bottom  block " #styling classes
@@ -244,10 +203,6 @@ slides:
     text_animation: fly-in-right
     text_animation_delay: .2
     text_animation_duration: 1
-    text_list_ordered: false #true for order lists, false for unordered
-    text_list_bullet: # for unordered lists - disc, square,
-    text_list_pre: |- #type as Markdown
-    text_list_items:
     text_content: |- #type as Markdown---
       The **stream report cards** will provide a snapshot on the health of the fishery each year and allow fishers to be better informed on the performance of their fishery across the state.
     cta_text: Check Out the report cards

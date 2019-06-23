@@ -1,14 +1,11 @@
 ---
 
-layout: trout-monitoring-jekyll
+layout:  amp-story
 title: Testing   # The title of the story
 subtitle: Getting a Jekyll Template Up & Running
 publish_date:
 publisher: NSW Department of Primary Industries # The name of the story's publisher
 publisher_logo_src: 00-26fifty.png #logo in 1x1 aspect ratio - .png
-poster_portrait_src: # Story Poster in 3x4 aspect ratio min 696px x 928px
-poster_square_src: # Story Poster in 1x1 aspect ratio min 928px x 928px
-poster_landscape_src: # Story Poster in 4x3 aspect ratio min 928px x 696px
 brand_logo: 00-dpi-rev.svg
 background_colour:
 background_audio:
@@ -17,7 +14,6 @@ cover:
   title: Fisheries Test
   logo_placement: right
   secondary_logo: trout-rev.svg
-  subtitle: Tetsing AMP Stories
   background_image: field.jpg
   filter: "brightness(.8)"
   gradient_overlay: "to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
@@ -42,4 +38,6 @@ slides:
     - ""
     text_content: |- #type as Markdown
 
+    cta_text: Check Out the report cards
+    cta_link: "#"
 ---

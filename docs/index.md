@@ -70,7 +70,7 @@ layout: page
       <img src="{{ site.baseurl }}/assets/fisheries/northern.png" alt="">
     </div>
     <div class="text">
-        <h3><a href="{ site.baseurl }}/assets/docs/Report-Cards-2018-19-Northern.pdf">Northern Report Card</a></h3>
+        <h3><a href="{{ site.baseurl }}/assets/docs/Report-Cards-2018-19-Northern.pdf">Northern Report Card</a></h3>
     </div>
   </li>
   <li class="card">
@@ -78,7 +78,7 @@ layout: page
       <img src="{{ site.baseurl }}/assets/fisheries/central.png" alt="">
     </div>
     <div class="text">
-        <h3><a href="{ site.baseurl }}/assets/docs/Report-Cards-2018-19-Central.pdf">Central Report Card</a></h3>
+        <h3><a href="{{ site.baseurl }}/assets/docs/Report-Cards-2018-19-Central.pdf">Central Report Card</a></h3>
     </div>
   </li>
   <li class="card">

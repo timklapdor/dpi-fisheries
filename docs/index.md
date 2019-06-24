@@ -62,8 +62,45 @@ layout: page
 
 
 <section  class="cards" markdown="1">
-## Stories
+## Documents
 
+<ul>
+  <li class="card">
+    <div class="img">
+      <img src="{{ site.baseurl }}/assets/fisheries/northern.png" alt="">
+    </div>
+    <div class="text">
+        <h3><a href="{ site.baseurl }}/assets/docs/Report-Cards-2018-19-Northern.pdf">Northern Report Card</a></h3>
+    </div>
+  </li>
+  <li class="card">
+    <div class="img">
+      <img src="{{ site.baseurl }}/assets/fisheries/central.png" alt="">
+    </div>
+    <div class="text">
+        <h3><a href="{ site.baseurl }}/assets/docs/Report-Cards-2018-19-Central.pdf">Central Report Card</a></h3>
+    </div>
+  </li>
+  <li class="card">
+    <div class="img">
+      <img src="{{ site.baseurl }}/assets/fisheries/southern.png" alt="">
+    </div>
+    <div class="text">
+        <h3><a href="{ site.baseurl }}/assets/docs/Report-Cards-2018-19-Southern.pdf">Southern Report Card</a></h3>
+    </div>
+  </li>
+  <li class="card">
+    <div class="img">
+      <img src="{{ site.baseurl }}/assets/fisheries/report-cover.jpg" alt="">
+    </div>
+    <div class="text">
+        <h3><a href="{ site.baseurl }}/assets/docs/Annual-Report-Card-Document.pdf">Annual Report 2018-19</a></h3>
+    </div>
+  </li>
+
+</ul>
+
+<!--
 Filter stories by topic:
 <div class="fish-group">
 <button>Trout</button><button>Murray Cod</button><button>Golden Perch</button><button>Australian Bass</button>
@@ -72,4 +109,5 @@ Filter stories by topic:
 <div class="region-group">
 <button>North</button><button>Central</button><button>South</button>
 </div>
+-->
 </section>

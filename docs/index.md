@@ -15,7 +15,7 @@ layout: page
       <img src="{{ story.slug | relative }}/poster-square.jpg" alt="">
     </div>
     <div class="text">
-        <h3><a href="{{ site.baseurl }}{{ story.url }}">{{ story.title }}</a></h3>
+        <h3><a href="{{ site.baseurl }}{{ story.url }}">{{ story.title | capitalize }}</a></h3>
     </div>
   </li>
   {% endfor %}

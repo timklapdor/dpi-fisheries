@@ -30,10 +30,17 @@ p, li {
   font-size: 1.1rem;
   line-height: 1.2em;
   color: #fff;
+
+  a {
+    color: $accent;
+    text-decoration: none;
+  }
 }
 
-p + p {
-  margin-top: 1rem;
+
+
+p {
+  margin-top: .5rem;
 }
 
 q {
@@ -232,6 +239,17 @@ blockquote.quote-line {
 
 .vertical-middle {
   align-content: center !important;
+}
+
+.caption {
+  align-content:end !important;
+  padding: 0;
+
+  p {
+    font-size: .6em;
+    padding: .5em;
+    font-style: italic;
+  }
 }
 
 .published {

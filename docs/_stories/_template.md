@@ -3,6 +3,7 @@
 layout:  amp-story
 title: Testing   # The title of the story
 subtitle: Getting a Jekyll Template Up & Running
+slug:
 publish_date:
 publisher: NSW Department of Primary Industries # The name of the story's publisher
 publisher_logo_src: 00-26fifty.png #logo in 1x1 aspect ratio - .png
@@ -15,12 +16,15 @@ cover:
   logo_placement: right
   secondary_logo: trout-rev.svg
   background_image: field.jpg
+  background_video:
   filter: "brightness(.8)"
   gradient_overlay: "to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
 slides:
   - id:  # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_url: creek.jpg #file url
+    background_img: creek.jpg #file url
+    background_vid: creek.jpg #file url
+    background_carousel: []
     background_brightness: .5 #brightness control 0-1
     background_blur: 4 #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient

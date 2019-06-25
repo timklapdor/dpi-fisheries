@@ -1,0 +1,23 @@
+<amp-story-grid-layer template="fill">
+  {% if item.background_carousel != null %}
+    {% for item in item.background_carousel %}
+    <amp-img src="{{ item }}"
+      id="{{ forloop.index }}-pix"
+      width="720" height="1280"
+      layout="responsive"
+      >
+    </amp-img>
+    {% endfor %}
+  {% endif %}
+  </amp-carousel>
+</amp-story-grid-layer>
+
+<amp-img src="{{ item }}"
+  id="{{ forloop.index }}-pix"
+  width="720" height="1280"
+  layout="responsive"
+  animate-in="fade-in"
+  animate-in-delay=".5s"
+  animate-in-duration="1s"
+  {% if forloop.first == true %} {% else %} animate-in-after="{{ forloop.index | minus:1}}-pix"{% endif %}>{{ list }}>
+</amp-img>

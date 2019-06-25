@@ -22,7 +22,7 @@ cover:
 slides:
   - id:  challenge # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_url: creek.jpg #file url
+    background_img: creek.jpg #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: 4 #blur setting - px settings
     text_template: "vertical" #location of text
@@ -44,7 +44,7 @@ slides:
     text_content: |- #type as Markdown
   - id:  action # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_url: creek.jpg #file url
+    background_img: creek.jpg #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: 4 #blur setting - px settings
     text_template: "vertical" #location of text
@@ -58,7 +58,7 @@ slides:
       As a result NSW DPI Fisheries have developed a **state-wide trout strategy** to determine how to best address these challenges facing the fishery.
   - id:  action # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_url: creek.jpg #file url
+    background_img: creek.jpg #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: #blur setting - px settings
     text_template: "vertical" #location of text
@@ -74,7 +74,7 @@ slides:
       This monitoring will answer questions like...
   - id: Q1  # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_url: field.jpg #file url
+    background_img: field.jpg #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     text_template: "vertical" #location of text
@@ -88,7 +88,7 @@ slides:
       ## What is the distribution, abundance and size of fish?
   - id: Q2 # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_url: handfull.jpg #file url
+    background_img: handfull.jpg #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     text_template: "vertical" #location of text
@@ -101,7 +101,7 @@ slides:
     text_content: |- #type as Markdown
       ## Is there a decline in trout populations?
   - id: Q3 # need a unique id for each slide, don't use numbering
-    background_url: trayfull.jpg #file url
+    background_img: trayfull.jpg #file url
     text_template: "vertical" #location of text
     text_layer_class: "no-padding vertical-middle" #styling classes
     text_type: "question" #choose from list, block, blockquote, question
@@ -113,7 +113,7 @@ slides:
       ## Is stocking successful & is there natural recruitment?
   - id: workshops # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_url: meeting.jpg #file url
+    background_img: meeting.jpg #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     text_template: "third" #location of text
@@ -127,7 +127,7 @@ slides:
       During the trout strategy workshops stakeholders were asked to indicate key streams for spawning, monitoring and habitat rehabilitation.
   - id: map # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_url: regions-map.png #file url
+    background_img: regions-map.png #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
@@ -141,7 +141,7 @@ slides:
     text_content: |- #type as Markdown
       45 stream monitoring sites were identified across the state.
   - id: split # need a unique id for each slide, don't use numbering
-    background_url: regions-map.png #file url
+    background_img: regions-map.png #file url
     text_template: "vertical" #location of text
     text_layer_class: "no-padding vertical-middle" #styling classes
     text_type: "block" #choose from list, block, blockquote, question
@@ -152,7 +152,7 @@ slides:
     text_content: |- #type as Markdown
       This includes 15 rivers split evenly between the **North**, **Central** and **Southern** NSW trout fisheries. These sites will be sampled annually to provide data on the long term trends in the fishery.
   - id:  backpack # need a unique id for each slide, don't use numbering
-    background_url: electro-fishing.jpg #file url
+    background_img: electro-fishing.jpg #file url
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
     text_template: "third" #location of text
     text_layer_class: "bottom block " #styling classes
@@ -164,7 +164,7 @@ slides:
     text_content: |- #type as Markdown---
       Backpack electrofishing is widely used to monitor stream trout populations throughout the world. Monitoring of the NSW trout populations has adopted international best practice and scientifically rigorous techniques which will allow comparison across years and to previous survey data from NSW streams.
   - id: counting # need a unique id for each slide, don't use numbering
-    background_url: vaki.jpg #file url
+    background_img: vaki.jpg #file url
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
     text_template: "third" #location of text
     text_layer_class: "bottom block " #styling classes
@@ -180,7 +180,7 @@ slides:
       - Angler surveys
       - Citizen science
   - id: programs # need a unique id for each slide, don't use numbering
-    background_url: stream-grass.jpg #file url
+    background_img: stream-grass.jpg #file url
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
     text_template: "third" #location of text
     text_layer_class: "bottom block " #styling classes
@@ -192,7 +192,7 @@ slides:
     text_content: |- #type as Markdown---
       The NSW trout monitoring programs will allow managers to track how the fishery is going and where possible make improvements. However, trout populations vary widely and fluctuations in populations are normal in fish populations and trout are particularly good at responding to improvements in their environment.
   - id: cta # need a unique id for each slide, don't use numbering
-    background_url: trout-in-hand.jpg #file url
+    background_img: trout-in-hand.jpg #file url
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
     text_template: "vertical" #location of text
     text_layer_class: "no-padding vertical-bottom  block " #styling classes

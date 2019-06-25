@@ -25,7 +25,7 @@ slides:
   - id: list # need a unique id for each slide, don't use numbering
     auto_advance:
     background_template: fill # layout template
-    background_url: creek.jpg #file url
+    background_img: creek.jpg #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: 4 #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
@@ -48,7 +48,7 @@ slides:
   - id: blockquote
     auto_advance:
     background_template: fill # layout template
-    background_url: creek.jpg #file url
+    background_img: creek.jpg #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: 4 #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
@@ -68,7 +68,7 @@ slides:
   - id: block
     auto_advance:
     background_template: fill # layout template
-    background_url: creek.jpg #file url
+    background_img: creek.jpg #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: 4 #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
@@ -87,7 +87,7 @@ slides:
   - id: test-next
     auto_advance:
     background_template: fill # layout template
-    background_url: creek.jpg #file url
+    background_img: creek.jpg #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: 4 #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
@@ -104,7 +104,7 @@ slides:
   - id: test-third
     auto_advance:
     background_template: fill # layout template
-    background_url: creek.jpg #file url
+    background_img: creek.jpg #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: 4 #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
@@ -173,7 +173,7 @@ slides:
 <amp-story-page id="{{ forloop.index0 }}-{{ item.id }}">
 
    <amp-story-grid-layer template="{{ item.background_template }}">
-    <amp-img src="{{ item.background_url }}"
+    <amp-img src="{{ item.background_img }}"
       width="720" height="1280"
       layout="responsive"
       style="filter:

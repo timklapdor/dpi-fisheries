@@ -14,22 +14,23 @@ layout: amp-container
 
 <!-- COVER -->
   <amp-story-page id="cover">
-   <amp-story-grid-layer template="fill">
-     {% if page.cover.background_video != null %}
-     <amp-video autoplay loop
-      width="720" height="1280" layout="responsive"
-      poster="">
-      <source src="{{ page.cover.background_video }}" type="video/mp4" />
-    </amp-video>
+    <amp-story-grid-layer template="fill">
+       {% if page.cover.background_video != null %}
+       <amp-video autoplay loop
+        width="720" height="1280" layout="responsive"
+        poster="">
+        <source src="{{ page.cover.background_video }}" type="video/mp4" />
+      </amp-video>
 
-     {% else %}
-      <amp-img src="{{ page.cover.background_image }}"
-        width="720" height="1280"
-        layout="responsive"
-        style="filter: {{ page.cover.filter }}">
-      </amp-img>
-      {% endif %}
-   </amp-story-grid-layer>
+       {% else %}
+        <amp-img src="{{ page.cover.background_image }}"
+          width="720" height="1280"
+          layout="responsive"
+          style="filter: {{ page.cover.filter }}">
+        </amp-img>
+        {% endif %}
+     </amp-story-grid-layer>
+
 
    {% if page.cover.gradient_overlay %}
    <amp-story-grid-layer template="fill">
@@ -68,20 +69,55 @@ layout: amp-container
 {% for item in page.slides %}
 <amp-story-page id="{{ forloop.index0 }}-{{ item.id }}">
 
-   <amp-story-grid-layer template="fill">
-    <amp-img src="{{ item.background_url }}"
-      width="720" height="1280"
-      layout="responsive"
-      style="filter:
-        {% if item.background_brightness != null  %}brightness({{ item.background_brightness }}){% endif %}
-        {% if item.background_blur != null %}blur({{ item.background_blur }}px){% endif %};">
-    </amp-img>
-   </amp-story-grid-layer>
+    <amp-story-grid-layer template="fill">
+      {% if item.background_vid != nil %}
+      <amp-video autoplay loop
+       width="720" height="1280" layout="responsive"
+       poster="electro-poster.jpg">
+       <source src="{{ item.background_vid }}" type="video/mp4" />
+     </amp-video>
 
-   <amp-story-grid-layer template="fill">
-    <div style="background: linear-gradient({{ item.background_gradient }});">
-    </div>
-   </amp-story-grid-layer>
+      {% else %}
+      <amp-img src="{{ item.background_img }}"
+        width="720" height="1280"
+        layout="responsive"
+        style="filter:
+          {% if item.background_brightness != null  %}brightness({{ item.background_brightness }}){% endif %}
+          {% if item.background_blur != null %}blur({{ item.background_blur }}px){% endif %};">
+       </amp-img>
+       {% endif %}
+    </amp-story-grid-layer>
+
+    {% if item.background_carousel != null %}
+    <amp-story-grid-layer template="fill">
+      <amp-carousel
+      width="760"
+      height="1280"
+      layout="responsive"
+      type="slides"
+      autoplay
+      delay="5000">
+
+        {% for item in item.background_carousel %}
+        <amp-img src="{{ item }}"
+          id="{{ forloop.index }}-pix"
+          width="720" height="1280"
+          layout="responsive"
+          >
+        </amp-img>
+        {% endfor %}
+
+      </amp-carousel>
+    </amp-story-grid-layer>
+    {% endif %}
+
+    {% if item.background_gradient %}
+     <amp-story-grid-layer template="fill">
+      <div style="background: linear-gradient({{ item.background_gradient }});">
+      </div>
+     </amp-story-grid-layer>
+   {% endif %}
+
 
    <amp-story-grid-layer template="{{ item.text_template }}" class="{{ item.text_layer_class }}">
     {% if item.text_type == "list" %}
@@ -142,6 +178,13 @@ layout: amp-container
     {% endif %}
 
    </amp-story-grid-layer>
+
+   {% if item.text_caption != null %}
+   <amp-story-grid-layer template="vertical" class="caption">
+    <p class="bg-50-dpi-blk">{{ item.text_caption }}</p>
+   </amp-story-grid-layer>
+   {% endif %}
+
     {% if item.cta_link != null %}
     <amp-story-cta-layer class="cta">
       <a href="{{ item.cta_link }}" class="button">{{ item.cta_text }}</a>

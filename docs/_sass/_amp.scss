@@ -37,7 +37,9 @@ p, li {
   }
 }
 
-
+div[class*=dpi-orange] a {
+  color: $blk;
+}
 
 p {
   margin-top: .5rem;

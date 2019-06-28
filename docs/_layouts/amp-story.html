@@ -8,7 +8,10 @@ layout: amp-container
   title="{{ page.title }}"
   publisher="{{ page.publisher }}"
   publisher-logo-src="{{ page.publisher_logo_src }}"
-  poster-portrait-src="{{ site.baseurl }}/assets/test/cover.jpg">
+  poster-portrait-src="poster-portrait.jpg"
+  poster-square-src="poster-square.jpg"
+  poster-landscape-src="poster-landscape.jpg"
+
   <!-- #TODO: set cover images -->
 
 
@@ -131,7 +134,7 @@ layout: amp-container
              animate-in="fade-in"
              animate-in-delay=".2s"
              animate-in-duration=".5s"
-             {% if forloop.first == true %} {% else %} animate-in-after="{{ forloop.index | minus:1}}-list"{% endif %}>{{ list }}</li>
+             {% if forloop.first == true %} {% else %} animate-in-after="{{ forloop.index | minus:1}}-list"{% endif %}>{{ list | markdownify }}</li>
             {% endfor %}
           </ol>
         {% else %}
@@ -141,7 +144,7 @@ layout: amp-container
                animate-in="fade-in"
                animate-in-delay=".2s"
                animate-in-duration=".5s"
-               {% if forloop.first == true %} {% else %} animate-in-after="{{ forloop.index | minus:1}}-list"{% endif %}>{{ list }}</li>
+               {% if forloop.first == true %} {% else %} animate-in-after="{{ forloop.index | minus:1}}-list"{% endif %}>{{ list | markdownify }}</li>
                {% endfor %}
           </ul>
         {% endif%}

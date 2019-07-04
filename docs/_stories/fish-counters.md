@@ -1,7 +1,7 @@
 ---
 
 layout:  amp-story
-title: Monitoring trout populations   # The title of the story
+title: Counting trout populations   # The title of the story
 subtitle: Using Gaden fish trap, Vaki Riverwatcher and Trout Scouts
 slug: fish-counters
 publish_date: June 2019

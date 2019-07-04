@@ -40,6 +40,14 @@
         transition: all .2s ease;
       }
 
+      #extras path:hover {
+        fill: #F4F4F4 !important;
+        stroke: #F4F4F4 !important;
+        cursor: auto;
+
+      }
+
+
       .rating-5 {width="280"}
       .rating-4 {width="224"}
       .rating-3 {width="168"}
@@ -82,11 +90,41 @@
   <title>NSW-Fish-Census-Sketch</title>
   <desc>Created with Sketch.</desc>
   <g id="NSW-Fish-Census-Sketch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="grid" transform="translate(618.000000, 314.725769)" fill="#B3B3B3">
+        <g id="lines" transform="translate(1.000000, 0.274231)" fill-opacity="0.15" fill-rule="nonzero">
+            <polygon id="Path" points="279 0 279 233 280 233 280 0"></polygon>
+            <polygon id="Path" points="56 0 56 233 57 233 57 0"></polygon>
+            <polygon id="Path" points="112 0 112 233 113 233 113 0"></polygon>
+            <polygon id="Path" points="167 0 167 233 168 233 168 0"></polygon>
+            <polygon id="Path" points="223 0 223 233 224 233 224 0"></polygon>
+            <polygon id="Path" points="1.11022302e-16 0 0 233 1 233 1 0"></polygon>
+        </g>
+        <g id="numbers" transform="translate(0.000000, 235.274231)" font-family="Roboto-Regular, Roboto" font-size="7" font-weight="normal">
+            <text id="0">
+                <tspan x="0" y="6">0</tspan>
+            </text>
+            <text id="1">
+                <tspan x="56" y="6">1</tspan>
+            </text>
+            <text id="2">
+                <tspan x="112" y="6">2</tspan>
+            </text>
+            <text id="3">
+                <tspan x="167" y="6">3</tspan>
+            </text>
+            <text id="4">
+                <tspan x="222" y="6">4</tspan>
+            </text>
+            <text id="5">
+                <tspan x="279" y="6">5</tspan>
+            </text>
+        </g>
+    </g>
     <g id="Info" transform="translate(619.000300, 16.818000)">
       <text id="Label" font-family="Roboto-Regular, Roboto" font-size="8" font-weight="normal" letter-spacing="-0.0536" class="blue-3">
         <tspan x="0.1069" y="248.6709">LOCATION</tspan>
       </text>
-      <rect id="Rectangle" fill="#bbb" x="0.5" y="69.682" width="278" height="155"></rect>
+      <rect id="Rectangle" fill="#fff" x="0.5" y="69.682" width="278" height="155"></rect>
       <!-- <text id="Intro-Text" font-family="Roboto-Regular, Roboto" font-size="9" font-weight="normal" fill="#000000">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
       volutpat. Ut wisi enim ad minim veniam, quis nostrud exercitation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
@@ -98,19 +136,18 @@
       <text id="Title" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" class="blue-3">
         <tspan x="0.1069" y="48.2627">Explore data from 1998-2018</tspan>
       </text>
-      <text id="Intro-Text" font-family="Roboto-Regular, Roboto" font-size="9" font-weight="normal" fill="#000000">
-          <tspan x="0" y="77.182">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam </tspan>
-          <tspan x="0" y="87.182">nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </tspan>
-          <tspan x="0" y="97.182">erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci </tspan>
-          <tspan x="0" y="107.182">tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo </tspan>
-          <tspan x="0" y="117.182">consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate </tspan>
-          <tspan x="0" y="127.182">velit esse molestie consequat, vel illum dolore eu. Lorem ipsum dolor </tspan>
-          <tspan x="0" y="137.182">sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </tspan>
-          <tspan x="0" y="147.182">euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut </tspan>
-          <tspan x="0" y="157.182">wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper </tspan>
-          <tspan x="0" y="167.182">suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis </tspan>
-          <tspan x="0" y="177.182">autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie </tspan>
-          <tspan x="0" y="187.182">consequat, vel illum dolore eu </tspan>
+      <text id="Intro-Text" font-family="Roboto-Regular, Roboto" font-size="10.5" font-weight="normal" fill="#000000">
+          <tspan x="0" y="77.182">The NSW fish census map has been developed as a tool for </tspan>
+          <tspan x="0" y="90.182">anglers to gain information on the general patterns of fish </tspan>
+          <tspan x="0" y="103.182">numbers and changes between 1998 and 2018 across a </tspan>
+          <tspan x="0" y="116.182">range of regions across the state. The maps have been </tspan>
+          <tspan x="0" y="129.182">produced with available NSW DPI Fisheries electrofishing </tspan>
+          <tspan x="0" y="142.182">data and are a relative guide to fish populations across the </tspan>
+          <tspan x="0" y="155.182">regions and time periods. Only available data have been </tspan>
+          <tspan x="0" y="168.182">used so some regions may not have data for all time </tspan>
+          <tspan x="0" y="181.182">periods and these are given no value. This map can be used </tspan>
+          <tspan x="0" y="194.182">in conjunction with the anglers access and stocking </tspan>
+          <tspan x="0" y="207.182">websites to help plan your next trip!</tspan>
       </text>
     </g>
     <g id="Regions" transform="translate(10.000000, 38.821269)">
@@ -1174,6 +1211,24 @@
           </g> -->
       </g>
     </g>
+    <g id="extras" transform="translate(477.000000, 455.000000)">
+        <path d="M6,0 L121,0 C124.313708,-6.08718376e-16 127,2.6862915 127,6 L127,115.36899 C127,118.682699 124.313708,121.36899 121,121.36899 L92.4633,121.36899 L98.7562258,132 L61.0911,121.36899 L6,121.36899 C2.6862915,121.36899 -4.82366169e-16,118.682699 0,115.36899 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="Rectangle" fill="#F4F4F4"></path>
+        <text id="Data-is-a-rating-bas" font-family="Roboto-Regular, Roboto" font-size="8" font-weight="normal" fill="#0B3B60">
+            <tspan x="4" y="14">Data is a rating based on </tspan>
+            <tspan x="4" y="23">electrofishing catch per unit </tspan>
+            <tspan x="4" y="32">effort across the 4 time periods </tspan>
+            <tspan x="4" y="41">and 17 regions. The top 10% of </tspan>
+            <tspan x="4" y="50">sites get 5 stars, the top 10 to </tspan>
+            <tspan x="4" y="59">25% 4 stars, the top 25 to 50% </tspan>
+            <tspan x="4" y="68">get 3 stars, the top 50 to 75% get </tspan>
+            <tspan x="4" y="77">2 stars and the remaining sites </tspan>
+            <tspan x="4" y="86">get 1 star, if no or insufficient </tspan>
+            <tspan x="4" y="95">data is available (e.g., DPI may </tspan>
+            <tspan x="4" y="104">not have sampled in this area), </tspan>
+            <tspan x="4" y="113">no rating is given</tspan>
+        </text>
+    </g>
+
     <g id="Background" transform="translate(612.000300, 2.276000)" stroke="#D6D6D6">
       <path d="M1.4374,596 L1.4374,0.725" id="Stroke-1"></path>
       <path d="M1.4374,558.3301 L296.2414,558.3301" id="Stroke-3"></path>
@@ -1218,6 +1273,8 @@
       }
     })()
      ]]></script>
+
+
 
       <!-- Tooltips from http://www.petercollingridge.co.uk/tutorials/svg/interactive/tooltip/
       Removed #tooltip { dominant-baseline: hanging;} as it doesn't work in Safari - added the dy value to the tooltip text element -->

@@ -50,6 +50,12 @@ layout: amp-container
     </amp-img>
    </amp-story-grid-layer>
 
+   {% if page.cover.text_caption != null %}
+   <amp-story-grid-layer template="vertical" class="caption">
+    <p class="bg-50-dpi-blk">{{ page.cover.text_caption }}</p>
+   </amp-story-grid-layer>
+   {% endif %}
+
    <amp-story-grid-layer template="vertical" class="logo-bottom">
     <amp-img src="{{ page.cover.secondary_logo }}"
       width="150" height="100">
@@ -66,7 +72,9 @@ layout: amp-container
     <p>{{ page.subtitle }}</p>
    </div>
    </amp-story-grid-layer>
+
   </amp-story-page>
+
 
 <!-- PAGES HERE -->
 {% for item in page.slides %}

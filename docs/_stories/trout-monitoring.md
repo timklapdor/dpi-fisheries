@@ -19,12 +19,14 @@ cover:
   background_video: trout-cover.mp4
   filter: "brightness(.8)"
   gradient_overlay: "to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,.4) 50%,rgba(0,0,0,0) 70%, rgba(0,0,0,.6) 95%"
+  text_caption: |-
+    Thredbo River Brown Trout
 slides:
   - id:  challenge # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: creek.jpg #file url
-    background_brightness: .5 #brightness control 0-1
-    background_blur: 4 #blur setting - px settings
+    background_img: stream-grass.jpg #file url
+    background_brightness: .6 #brightness control 0-1
+    background_blur:  #blur setting - px settings
     text_template: "vertical" #location of text
     text_layer_class: "center-text" #styling classes
     text_type: "list" #choose from list, block, blockquote, question
@@ -44,9 +46,9 @@ slides:
     text_content: |- #type as Markdown
   - id:  action # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: creek.jpg #file url
-    background_brightness: .5 #brightness control 0-1
-    background_blur: 4 #blur setting - px settings
+    background_img: baby-fish.jpg #file url
+    background_brightness: .7 #brightness control 0-1
+    background_blur:  #blur setting - px settings
     text_template: "vertical" #location of text
     text_layer_class: "center-text " #styling classes
     text_type: "blockquote" #choose from list, block, blockquote, question

@@ -139,9 +139,9 @@ slides:
     text_animation_delay: .2
     text_animation_duration: 1
     text_content: |- #type as Markdown
-      45 stream monitoring sites were identified across the state.
+      45 stream monitoring sites were identified across the state. This includes 15 rivers split evenly between the **North**, **Central** and **Southern** NSW trout fisheries.
   - id: split # need a unique id for each slide, don't use numbering
-    background_img: regions-map.png #file url
+    background_vid: data-entry.mp4 #file url
     text_template: "vertical" #location of text
     text_layer_class: "no-padding vertical-middle" #styling classes
     text_type: "block" #choose from list, block, blockquote, question
@@ -150,7 +150,7 @@ slides:
     text_animation_delay: .2
     text_animation_duration: 1
     text_content: |- #type as Markdown
-      This includes 15 rivers split evenly between the **North**, **Central** and **Southern** NSW trout fisheries. These sites will be sampled annually to provide data on the long term trends in the fishery.
+      These site will be sampled annually using electrofishing techniques to provide long term trends on the fishery. Data will be collected electronically to allow accurate and fast reporting.
   - id:  backpack # need a unique id for each slide, don't use numbering
     background_img: electro-fishing.jpg #file url
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient

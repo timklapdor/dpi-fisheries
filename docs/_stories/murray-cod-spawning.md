@@ -160,7 +160,7 @@ slides:
     text_list_items:
     - "Long term electrofishing surveys in the Murrumbidgee, Gwydir and Dumaresq to monitor population size structure"
     - "Monitoring effectiveness of stocking in impoundments"
-    - "Monitoring angler catches, fish population size structure and fish effort with creel surveys and citizen science"
+    - "Monitoring angler catches, fish population size structure and angler effort with creel surveys and citizen science"
   - id: next # need a unique id for each slide, don't use numbering
     auto_advance:
     background_carousel: [car-1.jpg, car-2.jpg, car-3.jpg] #file url

@@ -180,7 +180,7 @@ slides:
       - Angler surveys
       - Citizen science
   - id: programs # need a unique id for each slide, don't use numbering
-    background_img: stream-grass.jpg #file url
+    background_vid: trout-swimming.mp4 #file url
     background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
     text_template: "third" #location of text
     text_layer_class: "bottom block " #styling classes

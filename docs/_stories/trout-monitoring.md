@@ -16,7 +16,7 @@ cover:
   logo_placement: right
   secondary_logo:
   background_image: trout.jpg
-  background_video: trout-swimming.mp4
+  background_video: trout-cover.mp4
   filter: "brightness(.8)"
   gradient_overlay: "to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,.4) 50%,rgba(0,0,0,0) 70%, rgba(0,0,0,.6) 95%"
 slides:

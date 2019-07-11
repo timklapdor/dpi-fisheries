@@ -148,6 +148,6 @@ slides:
     text_animation_duration: 1
     text_content: |- #type as Markdown---
       Find out more about our counting programs online.
-    cta_text: Check Out the report cards
+    cta_text: DPI Website
     cta_link: "#"
 ---

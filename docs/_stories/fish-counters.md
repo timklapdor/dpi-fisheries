@@ -50,6 +50,23 @@ slides:
         In order to track numbers of trout in the annual spawn run, we are installing a VAKI Riverwatcher system. This will be complemented by a number of Trout Scout video systems.
 
         The trap on the Thredbo River will also be supplemented with Trout Scout video systems situated in the Jindabyne catchment.
+  - id:  overall # need a unique id for each slide, don't use numbering
+    auto_advance:
+    background_img: vaki-2.jpg #file url
+    background_brightness:  #brightness control 0-1
+    background_blur:  #blur setting - px settings
+    background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
+    text_template: "vertical" #location of text
+    text_layer_class: "no-padding vertical-bottom" #styling classes
+    text_type: "question" #choose from list, block, blockquote, question
+    text_div_class: "question bg-dpi-blue-d "
+    text_animation: "fly-in-bottom"
+    text_animation_delay: .5
+    text_animation_duration: 1
+    text_content: |- #type as Markdown
+      The [VAKI Riverwatcher](){: .text-dpi-yellow} is used in widely in Europe, America and Canada to monitor migratory salmonids.
+
+      The Trout Scout is based on the [“Smolt Spy”](){: .text-dpi-yellow} designed by [FISHBIO](){: .text-dpi-yellow} in America. FISHBIO use it mainly to monitor juvenile fish but NSW DPI have designed systems for a range of environments and fish sizes.
   - id: vaki # need a unique id for each slide, don't use numbering
     auto_advance:
     background_carousel: [cat-1.jpg, cat-2.jpg, cat-3.jpg] #file url
@@ -119,21 +136,5 @@ slides:
     - "Complements previous and current electrofishing monitoring."
     - "Suitable to use in remote areas."
     text_content: |- #type as Markdown
-  - id:  gaden # need a unique id for each slide, don't use numbering
-    auto_advance:
-    background_img: vaki-2.jpg #file url
-    background_brightness:  #brightness control 0-1
-    background_blur:  #blur setting - px settings
-    background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
-    text_template: "vertical" #location of text
-    text_layer_class: "no-padding vertical-bottom" #styling classes
-    text_type: "question" #choose from list, block, blockquote, question
-    text_div_class: "question bg-dpi-blue-d "
-    text_animation: "fly-in-bottom"
-    text_animation_delay: .5
-    text_animation_duration: 1
-    text_content: |- #type as Markdown
-      The [VAKI Riverwatcher](){: .text-dpi-yellow} is used in widely in Europe, America and Canada to monitor migratory salmonids.
 
-      The Trout Scout is based on the [“Smolt Spy”](){: .text-dpi-yellow} designed by [FISHBIO](){: .text-dpi-yellow} in America. FISHBIO use it mainly to monitor juvenile fish but NSW DPI have designed systems for a range of environments and fish sizes.
 ---

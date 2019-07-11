@@ -131,10 +131,10 @@ slides:
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
     text_template: "vertical" #location of text
-    text_layer_class: "no-padding vertical-top" #styling classes
+    text_layer_class: "no-padding vertical-bottom" #styling classes
     text_type: "question" #choose from list, block, blockquote, question
     text_div_class: "question bg-20-dpi-orange "
-    text_animation: "fly-in-top"
+    text_animation: "fly-in-bottom"
     text_animation_delay: .2
     text_animation_duration: 1
     text_content: |- #type as Markdown
@@ -159,15 +159,15 @@ slides:
     - "Monitoring angler catches, fish population size structure and angler effort with creel surveys and citizen science"
   - id: next # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_carousel: [car-1.jpg, car-2.jpg, car-3.jpg] #file url
+    background_carousel: [car-1.jpg, car-2.jpg] #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
     text_template: "vertical" #location of text
     text_layer_class: "no-padding vertical-bottom" #styling classes
     text_type: "question" #choose from list, block, blockquote, question
-    text_div_class: "question bg-20-dpi-yellow"
-    text_animation: "fly-in-top"
+    text_div_class: "question bg-20-dpi-blue"
+    text_animation: "fly-in-bottom"
     text_animation_delay: .2
     text_animation_duration: 1
     text_content: |- #type as Markdown
@@ -175,5 +175,5 @@ slides:
 
       **Hydroacoustic surveys** will likely be used to estimate population size/ biomass of Murray cod and other natives in impoundments.
 
-      Keep an eye of the [DPI website]() and [Facebook pages]() for regular monitoring updates.
+      Keep an eye of the [DPI website](){: .text-dpi-yellow} and [Facebook pages](){: .text-dpi-yellow} for regular monitoring updates.
 ---

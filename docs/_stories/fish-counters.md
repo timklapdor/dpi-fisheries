@@ -99,7 +99,7 @@ slides:
       The fish trap on the Thredbo River at Gaden has been in place for many years. The trap is checked daily by hatchery staff and all fish measured and checked for tags. Those that are not required for the hatchery operations are released upstream so they can continue on their journey.
   - id:  why-vaki # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: creek.jpg #file url
+    background_vid: trout-swimming.mp4 #file url
     background_brightness: .5 #brightness control 0-1
     background_blur: 4 #blur setting - px settings
     text_template: "vertical" #location of text
@@ -112,7 +112,7 @@ slides:
     text_list_ordered: false #true for order lists, false for unordered
     text_list_bullet: # for unordered lists - disc, square,
     text_list_pre: |- #type as Markdown
-      Why use the VAKi and video systems to monitor number in the trout spawning run?
+      Why use the VAKi and video systems to monitor numbers in the trout spawning run?
     text_list_items:
     - "**Non-invasive** - We can count, identify, and observe trout without having to touch them or remove them from the water."
     - "**Remote Access** - We can access some of the information remotely in all weather conditions."
@@ -133,7 +133,7 @@ slides:
     text_animation_delay: .5
     text_animation_duration: 1
     text_content: |- #type as Markdown
-      The [VAKI Riverwatcher]() is used in widely in Europe, America and Canada to monitor migratory salmonids.
+      The [VAKI Riverwatcher](){: .text-dpi-yellow} is used in widely in Europe, America and Canada to monitor migratory salmonids.
 
-      The Trout Scout is based on the [“Smolt Spy”]() designed by [FISHBIO]() in America. FISHBIO use it mainly to monitor juvenile fish but NSW DPI have designed systems for a range of environments and fish sizes.
+      The Trout Scout is based on the [“Smolt Spy”](){: .text-dpi-yellow} designed by [FISHBIO](){: .text-dpi-yellow} in America. FISHBIO use it mainly to monitor juvenile fish but NSW DPI have designed systems for a range of environments and fish sizes.
 ---

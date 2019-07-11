@@ -20,7 +20,7 @@ cover:
 slides:
   - id:  overview # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: vaki-2.jpg #file url
+    background_vid: trout-counting.mp4 #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
@@ -35,7 +35,7 @@ slides:
       The spawning run of brown and rainbow trout in the rivers flowing to Eucumbene and Jindabyne Dams form an integral component of the fishery in the region.
   - id: intro # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_vid: trout-counting.mp4 #file url
+    background_vid: vaki-install.mp4 #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
@@ -52,23 +52,6 @@ slides:
         The trap on the Thredbo River will also be supplemented with Trout Scout video systems situated in the Jindabyne catchment.
   - id: vaki # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_vid: vaki-install.mp4 #file url
-    background_brightness:  #brightness control 0-1
-    background_blur:  #blur setting - px settings
-    background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
-    text_template: "vertical" #location of text
-    text_layer_class: "no-padding vertical-top" #styling classes
-    text_type: "question" #choose from list, block, blockquote, question
-    text_div_class: "question bg-dpi-orange-d "
-    text_animation: "fly-in-top"
-    text_animation_delay: .5
-    text_animation_duration: 1
-    text_content: |- #type as Markdown
-      The VAKI Riverwatcher is a fish counting tool used to collect data on fish numbers and movements and this information will aid in the improved management of the Snowy Lakes fisheries.
-
-      The system includes an infrared scanner which records a silhouette image of the fish and this scanner also triggers a camera which captures photographs or video of each fish.
-  - id: fishbio # need a unique id for each slide, don't use numbering
-    auto_advance:
     background_carousel: [cat-1.jpg, cat-2.jpg, cat-3.jpg] #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
@@ -81,10 +64,12 @@ slides:
     text_animation_delay: .5
     text_animation_duration: 1
     text_content: |- #type as Markdown
-      These systems are based off the American FISHBIO’s “Smolt Spy”. It involves a motion detection Camera system that will record any fish moving through the device. From this we are able to collect information about when trout travel up and downstream to spawn, as well as size range and species.
-  - id:  gaden # need a unique id for each slide, don't use numbering
+      The VAKI Riverwatcher is a fish counting tool used to collect data on fish numbers and movements and this information will aid in the improved management of the Snowy Lakes fisheries.
+
+      The system includes an infrared scanner which records a silhouette image of the fish and this scanner also triggers a camera which captures photographs or video of each fish.
+  - id: fishbio # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: vaki-2.jpg #file url
+    background_carousel: [scout-1.jpg, scout-2.jpg, scout-3.jpg] #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
@@ -92,6 +77,21 @@ slides:
     text_layer_class: "no-padding vertical-bottom" #styling classes
     text_type: "question" #choose from list, block, blockquote, question
     text_div_class: "question bg-dpi-orange-d "
+    text_animation: "fly-in-bottom"
+    text_animation_delay: .5
+    text_animation_duration: 1
+    text_content: |- #type as Markdown
+      The Trout Scout video systems are based off the American FISHBIO’s “Smolt Spy”. It involves a motion detection Camera system that will record any fish moving through the device. From this we are able to collect information about when trout travel up and downstream to spawn, as well as size range and species.
+  - id:  gaden # need a unique id for each slide, don't use numbering
+    auto_advance:
+    background_img: gaden.jpg #file url
+    background_brightness:  #brightness control 0-1
+    background_blur:  #blur setting - px settings
+    background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
+    text_template: "vertical" #location of text
+    text_layer_class: "no-padding vertical-bottom" #styling classes
+    text_type: "question" #choose from list, block, blockquote, question
+    text_div_class: "question bg-dpi-green-d "
     text_animation: "fly-in-bottom"
     text_animation_delay: .5
     text_animation_duration: 1

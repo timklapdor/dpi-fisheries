@@ -69,7 +69,7 @@ slides:
       The system includes an infrared scanner which records a silhouette image of the fish and this scanner also triggers a camera which captures photographs or video of each fish.
   - id: fishbio # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: vaki-2.jpg #file url
+    background_carousel: [cat-1.jpg, cat-2.jpg, cat-3.jpg] #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient

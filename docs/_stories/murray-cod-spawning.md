@@ -56,7 +56,7 @@ slides:
       Murray cod spawning site during dry conditions
   - id: difference-2 # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: habitat-3.jpg #file url
+    background_img: spawning.jpg #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
@@ -73,8 +73,6 @@ slides:
       _Recruitment_ is the next step where the larvae or small fish survive and have the opportunity to grow to an adult.
 
       Successful spawning doesn’t always mean successful recruitment. As various environmental factors (e.g. food availability and environmental conditions) can influence this.
-    text_caption: |-
-      Murray cod spawning site during dry conditions
   - id: monitoring # need a unique id for each slide, don't use numbering
     auto_advance:
     background_img: juveniles-4.jpg #file url
@@ -94,7 +92,7 @@ slides:
       Wild Murray cod from northern NSW
   - id: monitoring-2 # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: juveniles-4.jpg #file url
+    background_vid: cod-electro.mp4 #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
@@ -109,8 +107,6 @@ slides:
       Electrofishing is being used to monitor recruitment and survival of stocked fish as well as habitat preference of wild juvenile fish.
 
       **Radiotracking**, **larval sampling** and **underwater video** are being used to monitor spawning and nesting cod. As well as larvae hatching
-    text_caption: |-
-      Wild Murray cod from northern NSW
   - id: nest # need a unique id for each slide, don't use numbering
     auto_advance:
     background_vid: nesting.mp4 #file url

@@ -52,15 +52,15 @@ slides:
         The trap on the Thredbo River will also be supplemented with Trout Scout video systems situated in the Jindabyne catchment.
   - id: vaki # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: vaki-2.jpg #file url
+    background_vid: vaki-install.mp4 #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
     text_template: "vertical" #location of text
-    text_layer_class: "no-padding vertical-bottom" #styling classes
+    text_layer_class: "no-padding vertical-top" #styling classes
     text_type: "question" #choose from list, block, blockquote, question
     text_div_class: "question bg-dpi-orange-d "
-    text_animation: "fly-in-bottom"
+    text_animation: "fly-in-top"
     text_animation_delay: .5
     text_animation_duration: 1
     text_content: |- #type as Markdown

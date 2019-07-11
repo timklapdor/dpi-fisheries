@@ -136,5 +136,18 @@ slides:
     - "Complements previous and current electrofishing monitoring."
     - "Suitable to use in remote areas."
     text_content: |- #type as Markdown
-
+  - id: cta # need a unique id for each slide, don't use numbering
+    background_img: fish.jpg #file url
+    background_gradient: "to top, rgba(0,0,0,0.6) 30%,rgba(0,0,0,0) 60%" # add in CSS gradient
+    text_template: "vertical" #location of text
+    text_layer_class: "no-padding vertical-bottom  block " #styling classes
+    text_type: "block" #choose from list, block, blockquote, question
+    text_div_class: "block-content offset-bottom-15"
+    text_animation: fly-in-right
+    text_animation_delay: .2
+    text_animation_duration: 1
+    text_content: |- #type as Markdown---
+      Find out more about our counting programs online.
+    cta_text: Check Out the report cards
+    cta_link: "#"
 ---

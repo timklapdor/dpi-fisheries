@@ -3,7 +3,7 @@
 layout:  amp-story
 title: Counting trout populations   # The title of the story
 subtitle: Using Gaden fish trap, Vaki Riverwatcher and Trout Scouts
-slug: fish-counters
+slug: counting-trout
 publish_date: June 2019
 publisher: NSW Department of Primary Industries # The name of the story's publisher
 publisher_logo_src: 00-26fifty.png #logo in 1x1 aspect ratio - .png
@@ -35,7 +35,7 @@ slides:
       The spawning run of brown and rainbow trout in the rivers flowing to Eucumbene and Jindabyne Dams form an integral component of the fishery in the region.
   - id: intro # need a unique id for each slide, don't use numbering
     auto_advance:
-    background_img: vaki-2.jpg #file url
+    background_vid: trout-counting.mp4 #file url
     background_brightness:  #brightness control 0-1
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient

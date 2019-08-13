@@ -12,7 +12,7 @@ layout: page
 {% for story in site.stories %}
   <li class="card">
     <div class="img">
-      <img src="{{ story.slug | relative }}/poster-square.jpg" alt="">
+      <img src="{{ story.slug | relative }}/poster-portrait.jpg" alt="{{ story.title }}">
     </div>
     <div class="text">
         <h3><a href="{{ site.baseurl }}{{ story.url }}">{{ story.title }}</a></h3>
@@ -24,11 +24,11 @@ layout: page
 
 <section  class="cards" markdown="1">
 ## Explorable Data
-<ul>
+<ul class="x2">
   {% for item in site.explorables %}
   <li class="card">
     <div class="img">
-      <img src="{{ site.baseurl }}/assets/fisheries/regions-poster-square.jpg" alt="">
+      <img src="{{ site.baseurl }}/assets/fisheries/regions-poster-square.jpg" alt="{{ item.title }}">
     </div>
     <div class="text">
         <h3><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h3>

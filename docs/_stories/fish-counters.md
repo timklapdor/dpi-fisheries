@@ -26,14 +26,16 @@ slides:
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
     text_template: "vertical" #location of text
-    text_layer_class: "center-text" #styling classes
-    text_type: "block" #choose from list, block, blockquote, question
-    text_div_class:
+    text_layer_class: "no-padding vertical-bottom" #styling classes
+    text_type: "question" #choose from list, block, blockquote, question
+    text_div_class: "question bg-dpi-blue-d"
     text_animation: "fade-in"
     text_animation_delay: .5
     text_animation_duration: 1
     text_content: |- #type as Markdown
+
       The spawning run of brown and rainbow trout in the rivers flowing to Eucumbene and Jindabyne Dams form an integral component of the fishery in the region.
+      
   - id: intro # need a unique id for each slide, don't use numbering
     auto_advance:
     background_vid: vaki-install.mp4 #file url
@@ -41,10 +43,10 @@ slides:
     background_blur:  #blur setting - px settings
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
     text_template: "vertical" #location of text
-    text_layer_class: "no-padding vertical-bottom" #styling classes
+    text_layer_class: "no-padding vertical-top" #styling classes
     text_type: "question" #choose from list, block, blockquote, question
     text_div_class: "question bg-dpi-orange-d "
-    text_animation: "fly-in-bottom"
+    text_animation: "fly-in-top"
     text_animation_delay: .5
     text_animation_duration: 1
     text_content: |- #type as Markdown

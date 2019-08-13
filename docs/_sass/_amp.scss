@@ -70,13 +70,14 @@ amp-story-grid-layer.logo-top-right > * {
 }
 
 amp-story-grid-layer.logo-bottom {
+  flex-direction: row;
   align-content:end ;
   justify-content: flex-end;
   padding: 1.5vw;
 }
 
 amp-story-grid-layer.logo-bottom > * {
-  justify-self:end;
+  justify-self: end;
 }
 
 amp-story-grid-layer.logo-bottom img {
@@ -268,18 +269,18 @@ blockquote.quote-line {
   justify-content: center;
   align-content: center;
 
-  .button {
-    align-self: center;
-    background-color: $accent;
-    border-radius: 1em;
-    padding: 1em;
-    color: $rev;
-    text-transform: uppercase;
-    text-decoration: none;
+.button {
+  align-self: center;
+  background-color: $accent;
+  border-radius: 1em;
+  padding: 1em;
+  color: $rev;
+  text-transform: uppercase;
+  text-decoration: none;
 
-    &:hover {
-      background: $orange-d;
-      transition: all .5s;
+&:hover {
+  background: $orange-d;
+  transition: all .5s;
     }
   }
 }

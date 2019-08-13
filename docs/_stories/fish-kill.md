@@ -15,6 +15,7 @@ cover:
   logo_placement: right
   background_image: cover.jpg
   background_video:
+  secondary_logo: 00-board.svg
   filter: "brightness(.8)"
   gradient_overlay: "to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"
 slides:

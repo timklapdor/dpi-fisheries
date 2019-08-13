@@ -14,7 +14,7 @@ permalink: :title/index.html
 cover:
   title: Fisheries Test
   logo_placement: right
-  secondary_logo: trout-rev.svg
+  secondary_logo: 00-board.svg
   background_image: field.jpg
   background_video:
   filter: "brightness(.8)"

@@ -94,7 +94,7 @@ layout: page
       <img src="{{ site.baseurl }}/assets/fisheries/report-cover.jpg" alt="">
     </div>
     <div class="text">
-        <h3><a href="{ site.baseurl }}/assets/docs/Annual-Report-Card-Document.pdf">Annual Report 2018-19</a></h3>
+        <h3><a href="{{ site.baseurl }}/assets/docs/Annual-Report-Card-Document.pdf">Annual Report 2018-19</a></h3>
     </div>
   </li>
 

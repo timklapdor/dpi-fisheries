@@ -13,8 +13,8 @@ background_audio:
 permalink: :title/index.html
 cover:
   title: Fisheries Test
-  logo_placement: right
-  secondary_logo: trout-rev.svg
+  logo_placement: left
+  secondary_logo: 00-board.svg
   background_video: murray.mp4
   filter: "brightness(.8)"
   gradient_overlay: "to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%"

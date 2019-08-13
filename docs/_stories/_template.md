@@ -30,7 +30,7 @@ slides:
     background_gradient: "to bottom, rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 100%" # add in CSS gradient
     text_template: "vertical" #location of text
     text_layer_class: "center-text" #styling classes
-    text_type: "list" #choose from list, block, blockquote, question
+    text_type: "block" #choose from list, block, blockquote, question
     text_div_class:
     text_animation: "fade-in"
     text_animation_delay: .5

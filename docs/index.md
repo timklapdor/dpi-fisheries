@@ -111,3 +111,18 @@ Filter stories by topic:
 </div>
 -->
 </section>
+
+<section  class="cards" markdown="1">
+## Downloads
+
+<ul class="x2">
+{% for story in site.stories %}
+  <li class="card" style="height: 20vh;">
+    <div class="text">
+        <h3><a href="{{ site.baseurl }}/zips/{{ story.slug }}.zip">Download {{ story.title }}</a></h3>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+</section>

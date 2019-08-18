@@ -33,9 +33,8 @@ slides:
     text_animation_delay: .5
     text_animation_duration: 1
     text_content: |- #type as Markdown
-
       The spawning run of brown and rainbow trout in the rivers flowing to Eucumbene and Jindabyne Dams form an integral component of the fishery in the region.
-      
+      {: .offset-bottom-5}
   - id: intro # need a unique id for each slide, don't use numbering
     auto_advance:
     background_vid: vaki-install.mp4 #file url
